@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+.clearfix {
+  clear: both;
+  display: block;
+  content: " ";
+}
+body {
+  background-image: url("img/bgc.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.logo_zdj {
+  width: 30vw;
+  height: auto;
+}
+nav {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-around;
+  width: 45%;
+  right: 3%;
+  top: 6vh;
+  background-color: rgb(13, 73, 164);
+  padding: 20px 0;
+  font-size: 2.5vh;
+  border-radius: 20px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+nav ul li a:hover {
+  background-color: rgb(24, 97, 206);
+}
+.back-menu {
+  position: absolute;
+  top: 15%;
+  left: 2%;
+  color: rgba(35, 44, 57, 0.8);
+  font-size: 2.2vh;
+}
+.back-menu a {
+  color: rgba(35, 44, 57, 0.8);
+}
+.wybor-osoba1 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-around;
+  top: 20%;
+  width: 25%;
+  height: 60vh;
+  left: 10%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  font-size: 1.8vh;
+  text-align: center;
+}
+.img-doc {
+  position: absolute;
+  top: 5%;
+  height: 30vh;
+  border-radius: 20px;
+
+  /* width: 30vh; */
+}
+.bol {
+  font-weight: 700;
+}
+
+.about {
+  position: absolute;
+  top: 60%;
+}
+.about p {
+  padding: 5px 0;
+}
+.important {
+  font-size: 2.1vh;
+}
+.stars {
+  color: black;
+}
+
+.visit {
+  position: absolute;
+  top: 20%;
+  right: 15%;
+  width: 40%;
+  height: 8vh;
+  font-size: 4vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 20px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+}
+
+.choose-term {
+  position: absolute;
+  top: 30%;
+  bottom: 5%;
+  width: 40%;
+  right: 15%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  color: #3e3d3d;
+}
+.choose-term a {
+  position: relative;
+  display: block;
+  top: 94%;
+  font-size: 2vh;
+  text-align: center;
+  color: #3e3d3d;
+}
+.choose-term .visit-type {
+  font-size: 2.3vh;
+  color: rgba(0, 0, 0, 0.67);
+}
+
+.choose-term a i {
+  padding: 0 10px;
+}
+.top {
+  position: relative;
+  top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bottom {
+  position: relative;
+  top: 92%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.visit-type {
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  left: 10%;
+  right: 10%;
+  align-items: center;
+  top: 8%;
+  color: #4e4e4e;
+}
+.kreska {
+  position: absolute;
+  top: 13vh;
+  width: calc(100% - 40px);
+  margin-left: 20px;
+  border-bottom: 1px solid black;
+}
+.which-visit {
+  background-color: rgba(109, 156, 226, 0.28);
+  color: #3e3d3d;
+  border-radius: 20px;
+  width: 50%;
+  height: 6vh;
+  line-height: 6vh;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  margin-left: 3%;
+  font-size: 2vh;
+  color: rgba(0, 0, 0, 0.67);
+  display: block;
+  cursor: pointer;
+}
+
+.date {
+  position: absolute;
+  top: 23%;
+  left: 10%;
+  font-size: 2.5vh;
+  color: #4e4e4e;
+}
+.fa-arrow-circle-left,
+.fa-arrow-circle-right {
+  position: absolute;
+  top: 34%;
+  font-size: 2.5vh;
+  color: #949191;
+}
+.visit-type a .fa-chevron-down {
+  padding-left: 0.5vh;
+}
+.fa-arrow-circle-right {
+  right: 10%;
+}
+.fa-arrow-circle-left {
+  left: 10%;
+}
+.fa-stethoscope {
+  padding-right: 12px;
+  color: #4e4e4e;
+}
+.days {
+  position: absolute;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  top: 21%;
+  left: 12%;
+  font-size: 2.4vh;
+  width: 76%;
+}
+
+
+
+#confirm_button {
+  position: absolute;
+  bottom: 4%;
+  left: 22%;
+  width: 20%;
+  min-width: 150px;
+  height: 7vh;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgb(13, 73, 164);
+  /* padding: 20px; */
+  font-size: 2.2vh;
+  border-radius: 20px;
+  justify-content: center;
+  cursor: pointer;
+}
+/* #confirm-button i {
+  font-size: 2.8vh;
+  color: #6495ed;
+  padding: 0 15px;
+} */
+
+/* portrait */
+
+@media (orientation: portrait) {
+  .logo_zdj {
+    width: 30vw;
+    height: auto;
+  }
+  nav {
+    width: 55%;
+    height: 7vh;
+    right: 3%;
+    top: 2vh;
+    background-color: rgb(13, 73, 164);
+    padding: 20px 0;
+    font-size: 2.3vh;
+    border-radius: 20px;
+  }
+  nav ul li a {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .back-menu {
+    top: 6%;
+    left: 2%;
+    font-size: 2.2vh;
+  }
+  .wybor-osoba1 {
+    position: absolute;
+    display: block;
+    top: 10%;
+    width: 80%;
+    height: 22vh;
+    left: 10%;
+    right: 10%;
+    color: white;
+    padding: 20px;
+    font-size: 1.8vh;
+    text-align: center;
+  }
+  .img-doc {
+    display: block;
+    position: absolute;
+    top: 8%;
+    height: 18vh;
+    max-width: 50%;
+    border-radius: 20px;
+    left: 5%;
+  }
+
+  .about {
+    position: absolute;
+    right: 2%;
+    left: 50%;
+    top: 5%;
+  }
+  .about p {
+    font-size: 1.7vh;
+  }
+
+  .important {
+    font-size: 1.9vh;
+  }
+
+  .visit {
+    display: none;
+  }
+
+  .choose-term {
+    top: 33%;
+    bottom: 10%;
+    width: 80%;
+    right: 10%;
+    left: 10%;
+  }
+  .choose-term a {
+    font-size: 2vh;
+  }
+  .choose-term .visit-type {
+    font-size: 2.2vh;
+  }
+
+  .choose-term a i {
+    padding: 0 10px;
+  }
+  .kreska {
+    top: 12.7vh;
+    width: calc(100% - 50px);
+    margin-left: 25px;
+  }
+  .which-visit {
+    font-size: 2vh;
+  }
+
+  .date {
+    position: absolute;
+    top: 23%;
+    left: 10%;
+    font-size: 2.25vh;
+    color: #4e4e4e;
+  }
+
+
+  .fa-arrow-circle-right {
+    right: 4%;
+  }
+  .fa-arrow-circle-left {
+    left: 4%;
+  }
+  #confirm-button {
+    position: absolute;
+    bottom: -2.0vh;
+    left: 50%;
+    right: 0%;
+    width: 60%;
+    font-size: 2.0vh;
+  }
+  #confirm-button i {
+    font-size: 2.6vh;
+    padding: 0 15px;
+  }
+}

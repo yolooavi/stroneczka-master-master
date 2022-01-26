@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="umow-wizyte-style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="drop_down_nav/style_downbar.css">
+    <script src="drop_down_nav/script_downbar.js"></script>
+    <title>Polmed</title>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/812e771e48.js" crossorigin="anonymous"></script>
+    <div><a href="front-stroneczka.html"><img src="img/logo.png" alt="logo" class="logo_zdj"></a></div>
+    
+    <nav>
+        <ul>
+            <li><a href="o_nas.html">O nas</a></li>
+            <li><a href="work_in_progress.html">Oferta</a></li>
+            <li><a href="work_in_progress.html">Cennik</a></li>
+            <li><a href="work_in_progress.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    <div class="back-menu">
+        <a href="front-stroneczka.html">Home</a>
+        <i class="fas fa-chevron-left"></i>
+        <a href="">Umów wizytę</a>
+ 
+    </div>
+    
+    <div class="wybor-osoba1">
+        <img src="img/Dariusz_Michałowski.png" alt="Dr. n. med Dariusz Michałowski" class="img-doc"> 
+        <div class="about">
+        <p class="bol">Dr. n. med </p> 
+        <p class="bol important">Dariusz Michałowski</p> 
+        <p class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
+        <p class="bol important">Lekarz rodzinny</p> 
+        <p class="bol">Rejestracja telefoniczna:</p> 
+        <p>+48 12 412 10 01</p>
+    </div>
+     </div>
+    <!-- <a  href="podsumowanie-dariusz.html" class="confirm-button" onclick="valueSender1()"><i class="fas fa-calendar-alt"></i>Przejdź do podsumowania</a> -->
+    <button id="confirm_button" onclick="valueSender1()" >Przejdź do podsumowania</button>
+    <div>
+       <h1 class="visit">Umów wizytę</h1>
+         <section class="choose-term">
+            <div class="visit-type">
+                
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Wybierz typ wizyty</button>
+                    <select id="myDropdown" class="dropdown-content" onchange="myFunction()">
+                      <option value="#control">wizyta kontrolna <br>  100zł</option >
+                      <option value="#consultation">konsultacja <br>  150 zł</option >
+                      <option value="#sickness">choroba <br>  100 zł</option >
+                      <option value="#prescription">wypisanie recepty <br>  50 zł</option >
+                      <option value="#vaccination">szczepienie <br>  50 zł</option >
+                    </select>
+                    <div class="choice">
+                    <p class="paragraph_1">Typ wizyty: </p>
+                        <input type = "text" id = "favourite"  >
+                    </div>
+                  </div>
+            </div>
+            <div class="days">
+                <div class="dropdown">
+                    <button onclick="myFunction2()" class="dropbtn">Wybierz dzień tygodnia: </button>
+                    <select id="myData" class="days-content" onchange="myFunction2()">
+                      <option value="#day1">Poniedziałek <br>  24.01</option >
+                      <option value="#day2">Wtorek<br>  25.01</option >
+                      <option value="#day3">Środa <br>  26.01</option >
+                      <option value="#day4">Czwartek <br>  27.01</option >
+                      <option value="#day5">Piątek<br>  28.01</option >
+                    </select>
+                    <div class="choice">
+                    <p class="paragraph_3">Dzień wizyty: </p>
+                        <input type = "text" id = "favourite2"  >
+                    </div>
+                  </div>
+                <!-- calendar  -->
+
+            <!-- <div class="field">
+                <label for="date">Wybierz datę wizyty: </label>
+                <form class="form-input" id="date-search" >
+                    <input type="date" class="text-field" name="date" id="myDate" > -->
+                    <!-- <button type="submit" class="btn btn-small" title="Pesquisar">Zatwierdź</button> -->
+                <!-- </form>
+            </div>
+            <script >
+                console.log("Test");
+                 var TempData = document.getElementById("myDate").value;
+                console.log(TempData);
+                
+            </script> -->
+            
+            <!-- ------- -->
+
+                <!-- <section class="day1">
+                    <p>Pon</p>
+                    <p>15 Lis</p>
+                    
+                </section>
+               
+                <section class="day2">
+                    <p>Wt</p>
+                    <p>16 Lis</p>
+                
+                </section>
+                
+                <section class="day3">
+                    <p>Śr</p>
+                    <p>17 Lis</p>
+                    
+                </section>
+               
+                <section class="day4">
+                    <p>Czw</p>
+                    <p>18 Lis</p>
+                    
+                </section>
+                
+                <section class="day5">
+                    <p>Pt</p>
+                    <p>19 Lis</p>
+                    
+                </section> -->
+                <div class= "calendar_hours">
+                    <div class="calendar_hours1">
+                        <button onclick="myFunction1()" class="dropbtn_1">Pokaż godziny</button>
+                        <select id="myHours" class="hours-content" onchange="myFunction1()">
+                        <option value="#hour1">1</option >
+                        <option value="#hour2">2</option >
+                        <option value="#hour3">3</option >
+                        <option value="#hour4">4</option >
+                        <option value="#hour5">5</option >
+                        </select>
+                        <div class="choice1">
+                        <p class="paragraph_2">Wybrana godzina: </p>
+                            <input type = "text" id = "favourite1"  >
+                        </div>
+                    </div>
+                    </div>
+                <!-- <div id="calendar_hours1">
+                    <button id="btn_h1"> 13:30</button>
+                    <button id="btn_h2"> -</button>
+                    <button id="btn_h3"> 16:00</button>
+                    <button id="btn_h4"> -</button>
+                </div>
+                <div class="calendar_hours2">
+                    <button id="btn_h2_1"> 9:00</button>
+                    <button id="btn_h2_2"> -</button>
+                    <button id="btn_h2_3"> 12:00</button>
+                    <button id="btn_h2_4"> -</button>
+                </div>
+                <div class="calendar_hours3">
+                    <button id="btn_h3_1"> -</button>
+                    <button id="btn_h3_2"> -</button>
+                    <button id="btn_h3_3"> -</button>
+                    <button id="btn_h3_4"> -</button>
+                </div>
+                <div class="calendar_hours4">
+                    <button id="btn_h4_1"> 8:00</button>
+                    <button id="btn_h4_2"> 8:30</button>
+                    <button id="btn_h4_3"> 9:00</button>
+                    <button id="btn_h4_4"> 9:30</button>
+                </div>
+                <div class="calendar_hours5">
+                    <button id="btn_h5_1"> -</button>
+                    <button id="btn_h5_2"> -</button>
+                    <button id="btn_h5_3"> -</button>
+                    <button id="btn_h5_4"> -</button>
+                </div>
+                <div class="choice_2">
+                    <p >Godzina:  </p>
+                        <input type = "text" id = "favourite_1"  >
+                    </div> -->
+            </div>
+            
+           
+        </section>
+    </div>
+            
+
+           
+            
+</body>
+</html>

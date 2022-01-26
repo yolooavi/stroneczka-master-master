@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="podsumowanie.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+   
+    <title>Polmed</title>
+    <script>
+    
+        var send = localStorage.getItem("favourite");
+        var resetValue = 0;
+        localStorage.setItem("favourite", resetValue);
+
+        var send1 =localStorage.getItem("favourite1");
+        var resetValue = 0;
+        localStorage.setItem("favourite1", resetValue);
+
+        var send2 = localStorage.getItem("favourite2");
+        var resetValue = 0;
+        localStorage.setItem("favourite2", resetValue);
+
+    </script>
+</head>
+<body>
+    <div><a href="front-stroneczka.html"><img src="img/logo.png" alt="logo" class="logo_zdj"></a></div>
+   
+    <nav >
+        <ul>
+            <li><a href="o_nas.html">O nas</a></li>
+            <li><a href="work_in_progress.html">Oferta</a></li>
+            <li><a href="work_in_progress.html">Cennik</a></li>
+            <li><a href="work_in_progress.html">Kontakt</a></li>
+        </ul>
+
+    </nav>
+    <div class="back-menu">
+        <a href="front-stroneczka.html">Home</a>
+        <i class="fas fa-chevron-left"></i>
+        <a href="umow-wizyte-dariusz.html">Umów wizytę</a>
+        <i class="fas fa-chevron-left"></i>
+        <a href="">Potwierdzenie wizyty</a>
+    </div>
+    <h1 class="confirm">Potwierdzenie wizyty</h1>
+    <div class="our-doc">
+        <div class="confirm-img-div">
+        <img src="img/Dariusz_Michałowski.png" alt="Dr. n. med Dariusz Michałowski" class="confirm-img">
+    </div>
+         <div class="text"> 
+            <p>Dr. n. med Dariusz Michałowski</p>
+            <!-- zmiana -->
+            <br>
+            <div class=" up1 inf clearfix">
+                <p>Cel wizyty:</p>
+                <p id="demo"></p>
+            </div>
+            <div class="up2 inf clearfix">
+                <p>Godzina:</p>
+                <p id="demo1"></p>
+            </div>
+            <div class="up3 inf clearfix">
+                <p>Data:</p>
+                <p id="demo2"></p>
+            </div>
+            <a href="umow-wizyte-dariusz.html" class="change-term">Zmień termin</a>
+            
+        <div class="payment">
+            <p>* Płatność tylko w przychodni!</p>
+        </div>
+            
+            <!-- <p>Cel wizyty: konsultacja</p>
+            <p class="last">Cena wizyty: 100 zł</p> -->
+            <a href="front-stroneczka.html" class="cancel">Anuluj wizytę</a>
+            <a href="" class="ok">Potwierdź wizytę</a>
+        </div>
+
+        
+    </div>
+    <!-- <script>
+        
+                console.log("Test");
+                 var TempData = document.getElementById("myDate").value;
+                console.log(TempData);
+                
+    </script> -->
+
+    
+    <!-- <footer>
+        <div class="column3">
+            Copyright © 2021 POLMED S.A.
+            <br>
+            Wszelkie prawa zastrzeżone.
+        </div>
+        <div class="column4">
+            <a href="https://pl-pl.facebook.com/CentrumMedycznePolmed/" target="_blank"><i
+                    class="fab fa-facebook-square footer"></i></a>
+            <a href="https://www.instagram.com/polmedcentrummedyczne/" target="_blank"><i
+                    class="fab fa-instagram footer"></i></a>
+            <a href="https://www.youtube.com/c/CentrumMedycznePOLMED" target="_blank"><i
+                    class="fab fa-youtube footer"></i></a>
+        </div>
+        <div class="column5">
+            <a href="https://www.nfz.gov.pl" class="nfz" target="_blank"><img src="img/nfz.png" alt=""
+                    class="nfz_img"></a>
+
+        </div>
+    </footer> -->
+    <script>
+        document.getElementById("demo").innerHTML=send;
+        document.getElementById("demo1").innerHTML=send1;
+        document.getElementById("demo2").innerHTML=send2;
+    </script>
+</body>
+</html>
